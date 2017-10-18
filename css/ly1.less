@@ -1,0 +1,204 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.gong{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+}
+.gong1 {
+    width: 200px;
+    height: 200px;
+    position: relative;    
+}
+.gong2 {
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;    
+}
+.gong3 {
+    max-width: 2000px;
+    max-height: 1000px;   
+}
+#page1{
+    .gong3;
+    float: left;
+    overflow: hidden;
+    #west {
+        .gong1;
+        #i1 {
+            .gong;
+            animation: firstphoto 2s ease forwards;
+        }
+        @keyframes firstphoto{
+            0% {
+                .gong2;
+            }
+            100% {
+                transform:skew(360deg,360deg);
+                left: 420px;
+                top: 300px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    #post {
+        .gong1;
+        top:-200px;
+        #i2 {
+            .gong;
+            animation: secondphoto 2s ease 2.5s forwards;
+        }
+        @keyframes secondphoto {
+            0% {
+                .gong2;
+            }
+            100% {
+                transform:rotate(360deg);
+                left: 640px;
+                top: 300px;
+                width: 200px;
+                height: 200px;
+            }
+        }      
+    }
+    #photo {
+        .gong1;
+        top: 300px;
+        #i3 {
+            .gong;
+            animation: thirdphoto 2s ease 5s forwards;
+        }
+        @keyframes thirdphoto {
+            0% {
+                .gong2;
+            }
+            100% {
+                transform:rotate3d(1,1,1,360deg);
+                left: 860px;
+                top: -400px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    #book {
+        .gong1;
+        top: -600px;
+        left:1700px;
+        #i4 {
+            .gong;
+            animation: forthphoto 2s ease 7.5s forwards;
+        }
+        @keyframes forthphoto {
+            0% {
+                .gong2;
+            }
+            100% {
+                transform:rotate(360deg);;
+                left: -620px;
+                top: 300px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    #shop {
+        .gong1;
+        top: -140px;
+        left:1700px;
+        #i5 {
+            .gong;
+            animation: fifthphoto 2s ease 10s forwards;
+        }
+        @keyframes fifthphoto{
+            0% {
+                .gong2;
+            }
+            100% {
+                transform:skew(360deg,360deg);
+                left: -400px;
+                top: -360px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    #go {
+        .gong;
+        width:200px;
+        height:50px;
+        left:860px;
+        top: 700px;
+        display:none;
+        border:none;
+        z-index: 14;
+        #button {
+            .gong;
+            width:0;
+            height:0;
+            opacity:0.5;
+            font-size: 1.5em;
+            color:#fff;
+            border: none; 
+            background-color:#21BDFD;
+            z-index:5;
+            display:block;
+            border-radius: .3em;
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            position: relative;
+            text-decoration: none;
+            vertical-align: middle;
+            animation: gobook 2s ease forwards;
+        }
+        #button:active {
+            outline: none;
+            margin-top: .25em;
+            padding-bottom: .5em;
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes gobook {
+            100% {
+                width:200px;
+                height: 50px;
+            }
+        }
+    }
+    #go:before,#go:after {
+        content: " ";
+        display:block;
+        position: absolute;
+        width:220px;
+        height: 70px;
+        top: -10px;
+        left:-10px;
+        border:4px solid #06F72D;
+        box-sizing: border-box;
+        animation: clipani 4s infinite linear;
+    }
+    #go:before {
+        animation-delay: 2s;
+    }
+    @keyframes clipani {
+        0%,100%{
+            clip:rect(0px,220px,70px,216px);
+        }
+        25%{
+            clip:rect(0px,220px,4px,0px);
+        }
+        50%{
+            clip:rect(0px,4px,70px,0px);
+        }
+        75%{
+            clip:rect(66px,220px,70px,0px);
+        }           
+    }
+}

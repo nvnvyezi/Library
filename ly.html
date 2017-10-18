@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书馆</title>
+<!-- 	<script src="../jq/jquery-3.2.1.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="./css/ly.css" />
+</head>
+<body>
+	<div id="yezi">
+		<div id="nvnv">
+<!-- 			<div id="page1">
+				<div id="west">
+					<img id="i1"  src="i/西.png" />
+				</div>
+				<div id="post">
+					<img id="i2"  src="i/邮.png" />
+				</div>
+				<div id="photo">
+					<img id="i3"  src="i/图.png" />
+				</div>
+				<div id="book">
+					<img id="i4"  src="i/书.png" />
+				</div>
+				<div id="shop">
+					<img id="i5"  src="i/馆.png" />
+				</div>
+				<div id="go">
+					<button id="button">go</button>
+				</div>
+			</div> -->
+			<div id="we">
+				<ul>
+					<li class="tt"></li>
+					<li id="ttt"><span>图书馆登录</span></li>
+					<li><p>User name : &nbsp;<input id="we1" type="text" name="fname" value="用户名" /></p></li>
+					<li><p>Password &nbsp;&nbsp;: &nbsp;<input id="we2" type="text" name="lname" value="密码" /></p></li>
+					<li><input id="login1" type="submit" value="login" /></li>
+					<li class="tt" id="tttt"></li>
+				</ul>
+			</div>
+			<div id="page2">
+				<div id="head">
+					<div class="headcenter">
+						<a href="http://www.lib.xiyou.edu.cn/" class="newschool">学校图书馆<span>|</span></a>
+						<a href="http://www.lib.xiyou.edu.cn/old/" class="oldschool">怀念旧版</a>
+						<a href="#"><span id="login">登录</span></a>
+					</div>
+				</div>
+				<div class="head1">
+					<p id="Name"></p>
+					<div class="head1photo">
+						<img class="schoolbook" src="./i/西邮图书馆.png" />
+						<ul>
+							<li><a id="a1" href="http://www.lib.xiyou.edu.cn/introduce/introduce.asp">图书馆历史</a></li>
+							<li><a href="http://www.xiyou.edu.cn/xxgk/about.htm">学校简介</a></li>
+							<li><a href="personalnews.html">个人信息</a></li>
+							<li><a href="http://222.24.19.3:81/xiyoucs/index.asp">学院首页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="Carousel">
+					<ul id="ul1">
+					<li class="l1"><a href="https://xiyoumobile.com/"><img src="i/12.jpg"></a></li>
+					<li class="l2"><a href="http://222.24.19.3:81/xiyoucs/index.asp"><img src="i/11.jpg"></a></li>
+					<li class="l3"><a href="http://www.xiyou.edu.cn/"><img src="i/10.jpg"></a></li>
+					<li class="l4"><a href="http://www.lib.xiyou.edu.cn/"><img src="i/13.jpg"></a></li>
+					<li class="l5"><a href="http://blog.csdn.net/nvnv_yezi/article/details/72851367"><img src="i/14.jpg"></a></li>
+					</ul>
+					<div id="yuan">
+						<ul id="ul2">
+							<li class="en"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div id="left"><</div>
+					<div id="right">></div>
+				</div>
+				<div id="Middle">
+					<div class="leftblock">
+						<div class="block1">
+							<ul>
+								<li class="Title"><img class="readers" src="i/读者.gif" />读者指南</li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/guide/rgxz.asp">入馆须知</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/guide/kgsj.asp">开馆时间</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/guide/zjbl.asp">证件办理</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/guide/jyqx.asp">借阅期限</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/guide/gcfb.asp">馆藏分布</a></li>
+							</ul>
+						</div>
+						<div class="block1" id="block2">
+							<ul>
+								<li class="Title"><img class="readers" src="i/读者.gif" />电子资源</li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/eresources/list.asp?class=e_bk">电子图书</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/eresources/list.asp?class=pbdb">试用数据库</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/eresources/list.asp?class=indb">自建特色库</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://www.lib.xiyou.edu.cn/eresources/list.asp?class=oadb">OA资源</a></li>
+								<li><img src="./i/小图标.gif" /><a href="http://222.24.3.7:8080/opac_two/newbook/queryIn.jsp">新书通报</a></li>
+							</ul>
+						</div>
+						<div class="block4">
+							<div class="b4top">
+								<img src="i/服务.gif" /><h2>常用服务</h2>
+							</div>
+							<div class="b4bottom">
+								<ul>
+									<li>
+										<a href="http://222.24.3.8/">
+											<img src="i/视频点播.gif" />
+											<span>vod视频点播</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://www.lib.xiyou.edu.cn/eresources/article.asp?class=cndb&id=18">
+											<img src="i/图书馆.gif" />
+											<span>移动图书馆</span>
+										</a>
+									</li>
+									<li>
+										<a href="news.html">
+											<img src="i/借阅.gif" />
+											<span>新闻</span>
+										</a>
+									</li>
+									<li>
+										<a href="collection.html">
+											<img src="i/馆藏书目.gif" />
+											<span >馆藏书目</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://qw.duxiu.com/getPage?sw=%C7%EB%CA%E4%C8%EB%BC%EC%CB%F7%B4%CA%28%B6%C1%D0%E3%29&allsw=&bCon=&fenlei=&sectyear=&datatype=0&Page=0&searchtype=0">
+											<img src="i/读秀.gif" />
+											<span>读秀搜索</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://www.yidu.edu.cn/saas/educhina.do?skey=0&caliscode=611800&svalue=%E8%AF%B7%E8%BE%93%E5%85%A5%E6%A3%80%E7%B4%A2%E8%AF%8D%28%EF%BD%85%E8%AF%BB%29&stype=99&s=on&he=1">
+											<img src="i/e读.gif" />
+											<span>e读搜索</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://ccc.calis.edu.cn/result.php?at=%C7%EB%CA%E4%C8%EB%BC%EC%CB%F7%B4%CA%28Calis%CD%E2%CE%C4%C6%DA%BF%AF%29&from=0&pos=0">
+											<img src="i/外文.gif" />
+											<span>外文期刊</span>
+										</a>
+									</li>
+									<li>
+										<a href="Notice.html">
+											<img src="i/读者信息.gif" />
+											<span>公告信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="BookCollection.html">
+											<img src="i/收藏.gif" />
+											<span>借阅排行</span>
+										</a>
+									</li>
+									<li>
+										<a href="Retrievalranking.html">
+											<img src="i/搜索.gif" />
+											<span>检索排行</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://www.lib.xiyou.edu.cn/reference/zxfs.asp">
+											<img src="i/新生.gif" />
+											<span>新生专栏</span>
+										</a>
+									</li>
+									<li>
+										<a href="aboutme.html">
+											<img src="i/关于我们.gif" />
+											<span>关于我们</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div  id="block3">
+						<h3><img src="i/书.gif" /><span>图书推荐</span></h3>
+					</div>
+				</div>
+				<div class="Bottom">
+					<div class="Bottom1">
+						<div class="Bottom12">
+							<a href="http://www.xiyou.edu.cn/"><span>学校首页</span></a>
+							<a href="https://xiyoumobile.com/"><span>实验室官网</span></a>
+						</div>
+					</div>
+					<div class="Bottom2">
+						<p>Copyright © 2017 西邮移动开发应用俱乐部 All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/ly.js"></script>
+<!-- <script type="text/javascript" src="./js/canvas-nest.min.js"></script>
+<canvas height="926"; width="1920"; style="position: fixed; top: 0px; left: 0px; z-index: 1; opacity: 1;" id="c_n1"></canvas> -->
+</body>
+</html>
